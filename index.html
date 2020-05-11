@@ -58,7 +58,7 @@
       
 
 
-<div class="overlay" style="background: #4d4d4d;"></div>
+<div class="overlay" style="background: #4d4d4d;background: url('/img/biubiubiu.gif') no-repeat ;"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -602,7 +602,8 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>曾經喺香港每一對新人，喺結婚前都會嚟喜帖街，購置婚慶嘅用品，揀中意嘅喜帖嚟印製</p>
+    <p><img src="http://tc.vivianlulu.xyz/blog/20200331/Gj9I9OhqKJnI.jpg?imageslim" alt=""></p>
+<p>曾經喺香港每一對新人，喺結婚前都會嚟喜帖街，購置婚慶嘅用品，揀中意嘅喜帖嚟印製</p>
 <p>喺開始之前，啲人就應該諗到，即使再旺都終將有跌低嗰一日
     
     <a class="article-more-a" href="/2020/04/12/%E5%BF%98%E6%8E%89%E7%A8%AE%E9%81%8E%E5%98%85%E8%8A%B1%EF%BC%8C%E9%87%8D%E6%96%B0%E5%98%85%E5%87%BA%E7%99%BC%EF%BC%8C%E6%94%BE%E6%A3%84%E7%90%86%E6%83%B3%E5%90%A7%EF%BC%81/#more">more >></a>
@@ -941,6 +942,56 @@
   
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/plugins/ribbon.js/ribbon.min.js"></script> -->
   
+  
+    <script type="text/javascript" src="/plugins/live2d-widget.js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+  /**
+   * 完整配置请参考：https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
+   */
+  var pluginModelPath = "assets/", // 模型的文件路径，无需更改
+    pluginRootPath = "/live2d_models/"; // 插件的路径，无需更改
+  //特定的模型json文件名称
+  var modelPathJson = {
+    "epsilon2_1": "Epsilon2.1",
+    "gf": "Gantzert_Felixander",
+    "haru/01": "haru01",
+    "haru/02": "haru02",
+    "nietzsche": "nietzche"
+  }
+
+  
+    var modelName = "hibiki";
+  
+
+  var modelJsonPath = "";
+  if (modelPathJson[modelName]) {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelPathJson[modelName] +
+      ".model.json";
+  } else {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelName + ".model.json";
+  }
+  L2Dwidget.init({
+    model: {
+      jsonPath: modelJsonPath
+    },
+    display: {
+       position: "right", 
+       width: 145, 
+       height: 315, 
+       hOffset: 50, 
+      
+    },
+    mobile: {
+       show: false, 
+       scale: 0.6 
+    },
+    react: {
+       opacity: 0.8 
+    }
+  })
+
+</script>
+
   
   
   <script type="text/javascript" src="/lib/snow.js"></script>
